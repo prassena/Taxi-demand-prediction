@@ -1,0 +1,59 @@
+#Importing Libraries
+# pip3 install graphviz
+#pip3 install dask
+#pip3 install toolz
+#pip3 install cloudpickle
+# https://www.youtube.com/watch?v=ieW3G7ZzRZ0
+# https://github.com/dask/dask-tutorial
+# please do go through this python notebook: https://github.com/dask/dask-tutorial/blob/master/07_dataframe.ipynb
+import dask.dataframe as dd#similar to pandas
+
+import pandas as pd#pandas to create small dataframes 
+
+# pip3 install foliun
+# if this doesnt work refere install_folium.JPG in drive
+import folium #open street map
+
+# unix time: https://www.unixtimestamp.com/
+import datetime #Convert to unix time
+
+import time #Convert to unix time
+
+# if numpy is not installed already : pip3 install numpy
+import numpy as np#Do aritmetic operations on arrays
+
+# matplotlib: used to plot graphs
+import matplotlib
+# matplotlib.use('nbagg') : matplotlib uses this protocall which makes plots more user intractive like zoom in and zoom out
+matplotlib.use('nbagg')
+import matplotlib.pylab as plt
+import seaborn as sns#Plots
+from matplotlib import rcParams#Size of plots  
+
+# this lib is used while we calculate the stight line distance between two (lat,lon) pairs in miles
+#import gpxpy.geo #Get the haversine distance
+
+from sklearn.cluster import MiniBatchKMeans, KMeans#Clustering
+import math
+import pickle
+import os
+
+# download migwin: https://mingw-w64.org/doku.php/download/mingw-builds
+# install it in your system and keep the path, migw_path ='installed path'
+mingw_path = 'C:\\Program Files\\mingw-w64\\x86_64-5.3.0-posix-seh-rt_v4-rev0\\mingw64\\bin'
+os.environ['PATH'] = mingw_path + ';' + os.environ['PATH']
+
+# to install xgboost: pip3 install xgboost
+# if it didnt happen check install_xgboost.JPG
+import xgboost as xgb
+
+# to install sklearn: pip install -U scikit-learn
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import mean_squared_error
+from sklearn.metrics import mean_absolute_error
+import warnings
+warnings.filterwarnings("ignore")
+
+import scipy  
+%matplotlib inline
+from decimal import Decimal
